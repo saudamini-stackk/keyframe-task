@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Floating Stars</title>
+<style>
+body{
+  margin:0;
+  overflow:hidden;
+  background:black;
+}
+.star{
+  position:absolute;
+  background:white;
+  border-radius:50%;
+  animation: floatUp 6s linear infinite, twinkle 1.5s infinite alternate;
+}
+.star1{ width:2px; height:2px; }
+.star2{ width:4px; height:4px; }
+.star3{ width:6px; height:6px; }
+.star4{ width:2px; height:2px; }
+.star5{ width:4px; height:4px; }
+.star6{ width:6px; height:6px; }
+.star7{ width:2px; height:2px; }
+.star8{ width:4px; height:4px; }
+.star9{ width:6px; height:6px; }
+.star10{ width:2px; height:2px; }
+.star11{ width:4px; height:4px; }
+.star12{ width:6px; height:6px; }
+.star13{ width:2px; height:2px; }
+@keyframes floatUp{
+  from{ transform: translateY(100vh); }
+  to{ transform: translateY(-10vh); }
+}
+@keyframes twinkle{
+  from{ opacity:0.3; }
+  to{ opacity:1; }
+}
+</style>
+</head>
+<body>
+<div class="star star1" style="left:5%; animation-delay:0s;"></div>
+<div class="star star2" style="left:15%; animation-delay:1s;"></div>
+<div class="star star3" style="left:30%; animation-delay:2s;"></div>
+<div class="star star4" style="left:45%; animation-delay:0.5s;"></div>
+<div class="star star5" style="left:60%; animation-delay:1.8s;"></div>
+<div class="star star6" style="left:75%; animation-delay:0.8s;"></div>
+<div class="star star7" style="left:90%; animation-delay:2.2s;"></div>
+<div class="star star8" style="left:20%; animation-delay:3s;"></div>
+<div class="star star9" style="left:50%; animation-delay:1.4s;"></div>
+<div class="star star10" style="left:80%; animation-delay:2.8s;"></div>
+<div class="star star11" style="left:10%; animation-delay:4s;"></div>
+<div class="star star12" style="left:35%; animation-delay:3.3s;"></div>
+<div class="star star13" style="left:65%; animation-delay:4.5s;"></div>
+</body>
+</html>
